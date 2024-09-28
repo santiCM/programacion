@@ -1,3 +1,4 @@
+#Programa que pida cinco palabras y muestre una frase con las cinco. Modifica el código para que entre palabra y palabra haya una coma
 pal1=str(input("introduce una palabra: "))
 pal2=str(input("introduce otra palabra: "))
 pal3=str(input("introduce otra: "))
