@@ -2,7 +2,7 @@ import math
 var1=int(input("introduce un numero "))
 var2=int(input("introduce otro "))
 var3=int(input(" introduce otro "))
-raiz=(var2-4*var1*var3)
+raiz=(var2**2-4*var1*var3)
 if raiz<0:
     print("La raíz no puede ser un valor negativo")
 else:
