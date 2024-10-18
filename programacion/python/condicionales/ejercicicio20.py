@@ -1,4 +1,5 @@
-#Programa que introduzca dos números y devuelva cuál de los dos es mayor, menor o son iguales
+#A partir del ejercicio anterior, forzar que el usuario solo pueda introducir por teclados 
+números entre 0 y 10
 var1=int(input("introduce un numero "))
 var2=int(input("introduce otro "))
 if var1>10 or var2>10:
