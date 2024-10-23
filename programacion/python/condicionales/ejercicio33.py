@@ -1,0 +1,8 @@
+var=input()
+frase=var.casefold()
+a=frase.count("a")
+i=frase.count("i")
+u=frase.count("u")
+e=frase.count("e")
+o=frase.count("o")
+print(f"el numero de a es {a}, i es {i}, u es {u}, e es {e} y o es {o}")
