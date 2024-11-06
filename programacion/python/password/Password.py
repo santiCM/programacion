@@ -11,11 +11,13 @@ print("Posición 8 Un número menor o igual que 5")
 
 password=input("introduce la contrasenya: ")
 lon=len(password)
+#inc es un chivato que se vuelve true en cuanto detecte un error
 inc=False
+#err acumula los errores que detecta y al final los dice todos
 err="-"
 if lon<6 or lon>8:
     print(f"Error, el password tiene una longitud de {lon} caracters i no compleix els requisits")
-if int(password[0])>5 or int(password[0])<1:
+if password[0] not in "12345":
     inc=True
     err=err+"Error en el caracter 1 "
 if not password[1].islower():
