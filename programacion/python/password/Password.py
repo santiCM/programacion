@@ -31,8 +31,8 @@ if password[3] not in "*_&":
     err=err+"Error en el caracter 4 "
 if not password[4].islower():
     inc=True
-    err=err+"Error en el caracter 5"
-if int(password[5])>9 or int(password[5])<6:
+    err=err+"Error en el caracter 5 "
+if password[5] not in "6789":
     inc=True
     err=err+"Error en el caracter 6 "
 if lon == 7:
