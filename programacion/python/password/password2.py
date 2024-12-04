@@ -5,14 +5,13 @@ print("3. Deben aparecer almenos dos minúsculas")
 print("4. Debe aparecer almenos una mayúscula")
 print("5. Debe aparecer almenos uno de estos símbolos: @,#,$,(,),¿,?,¡,!,&,=,%,/")
 print("6. tienes 3 intentos")
-
+pos=0
+neg=0
 lou=0
 numer=0
 correco=False
 
-for contador in range(3):  #repito la pregunta 3 veces
-    if correco==True:  #me aseguro de no repetir el bucle si la respuesta es correcta
-        break
+for contador in range(3):  #repito la pregunta 3 veces  
     lou=0   #Inicializo variables
     numer=0
     upp=False 
@@ -32,7 +31,7 @@ for contador in range(3):  #repito la pregunta 3 veces
         if recorrer in "@#~,?¿!¡&=%/":
             simbol=True
         if lou>=2:
-            minu=True   #ai hay mas de 2 minusculas esa parte se cunple
+            minu=True   #si hay mas de 2 minusculas esa parte se cunple
         if lon>=6:
             leng=True
         if numer>=2:
@@ -40,12 +39,13 @@ for contador in range(3):  #repito la pregunta 3 veces
         if upp==True and simbol==True and minu==True and num==True and leng==True:   
             correco=True    #si cumple con todo correco es true
             print("La contrasenya es correcta")
-            break         #si la contraseña se cumple deja de repetir
+            pos+=1
+            break        
     if leng==False:
         print("la contraseña es demasiado corta")
-        break       #si es muy corta no salen mas mensajes de error
     if not correco:
         print("la contrasenya es incorrecta")   
+        neg+=1
         if upp==False:
             print("faltan mayusculas")   #reviso lo que falla y digo el error
         if minu==False:
@@ -54,5 +54,7 @@ for contador in range(3):  #repito la pregunta 3 veces
             print("faltan numeros")
         if simbol==False:
             print("faltan simbolos")
+print(neg,"contraseñas eran incorrectas")
+print(pos,"contraseñas eran correctas")
         
        
