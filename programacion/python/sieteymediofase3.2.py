@@ -118,10 +118,12 @@ while Banca==True:
                 banca=False 
         if carta=="n" :
             Banca=False
-print(""" la partida se acaba""")
+print("la partida se acaba")
 if btotal>jtotal:
     if jtotal<8 and btotal<8 or btotal==7.5:
         print("Gana la banca")
+    if jtotal<7.5 and btotal>7.5:
+        print(f"Gana {nombre}")
 if btotal==jtotal:
     if jtotal<8 and btotal<8:
         print("empate, Gana la banca")
