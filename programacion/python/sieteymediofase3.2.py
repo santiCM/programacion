@@ -161,3 +161,5 @@ while rep!="n":
         jtotal=0
         btotal=0
         carta="s"
+    if rep=="n":
+        Banca=False
