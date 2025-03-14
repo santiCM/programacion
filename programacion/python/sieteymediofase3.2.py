@@ -137,6 +137,8 @@ while rep!="n":
                 Banca=False
         
     print("la partida se acaba")
+    print(f"La banca se planta con {btotal}")
+    print(f"{nombre} se planta con {jtotal}")
     if btotal>jtotal:
         if jtotal<8 and btotal<8 or btotal==7.5:
             print("Gana la banca")
